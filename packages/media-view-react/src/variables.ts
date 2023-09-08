@@ -1,0 +1,12 @@
+export const maxTouchTime = 200;
+export const defaultSpeed = 400;
+export const defaultEasing = 'cubic-bezier(0.25, 0.8, 0.25, 1)';
+export const maxMoveOffset = 40;
+export const horizontalOffset = 20;
+export const minStartTouchOffset = 20;
+export const defaultOpacity = 1;
+export const minScale = 1;
+export const maxScale = 6;
+export const longModeRatio = 3;
+export const scaleBuffer = 0.2;
+export const maxWaitAnimationTime = 250;

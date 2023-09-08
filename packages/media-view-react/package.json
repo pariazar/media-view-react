@@ -1,0 +1,44 @@
+{
+  "name": "media-view-react",
+  "version": "1.0.0",
+  "description": "Streamlined media preview and interaction. Display images and videos effortlessly with touch gestures, zoom, and panning. Create dynamic galleries, carousels, and engaging media presentations for React applications. Elevate your media viewing experience.",
+  "author": "pariazar",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/pariazar/media-view-react.git",
+  "source": "src/index.ts",
+  "main": "./dist/media-view-react.js",
+  "module": "./dist/media-view-react.module.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "react",
+    "react component",
+    "react photo",
+    "media-view-react",
+    "photo",
+    "image",
+    "photo preview",
+    "image preview",
+    "gallery",
+    "carousel"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && microbundle --external react,react-dom --format cjs,esm,modern",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@micro-web/microbundle": "^0.14.3",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "less": "^4.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2"
+  },
+  "files": [
+    "dist"
+  ]
+}

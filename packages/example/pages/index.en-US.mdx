@@ -1,0 +1,89 @@
+---
+title: An exquisite React photo preview component
+---
+
+import Callout from 'nextra-theme-docs/callout';
+import Bleed from 'nextra-theme-docs/bleed';
+import Features from '../components/features';
+
+import Index from '../components/doc-index';
+
+<h1 className="text-center font-bold md:text-5xl mt-8">media-view-react</h1>
+
+<Bleed>
+  <Features />
+</Bleed>
+
+`media-view-react` provides an exceptional preview interaction experience that begins with the opening of both images and videos. The animations, intricate details, and interactive elements in each frame have undergone meticulous design and extensive testing. This level of craftsmanship delivers an experience on par with native image and video preview functionalities, ensuring top-notch quality and seamless performance.
+
+<div className="mt-16 mb-20 text-center">
+  [Getting Started](/docs/getting-started) · [API](/docs/api) ·
+  [GitHub](https://github.com/pariazar/media-view-react.git)
+</div>
+
+<Index />
+
+## Overview
+
+```jsx
+import { MediaProvider, MediaView } from 'media-view-react';
+import 'media-view-react/dist/media-view-react.css';
+
+export default function App() {
+  return (
+    <MediaProvider>
+      <MediaView type="image" src="/1.jpg">
+        <img src="/1-thumbnail.jpg" alt="" />
+      </MediaView>
+
+      <MediaView type="video" src="/2.mp4">
+        <img src="/2-thumbnail.jpg" alt="" />
+      </MediaView>
+    </MediaProvider>
+  );
+}
+```
+
+In this example, `media-view-react` provides two components: `MediaProvider` and `MediaView`. With the `MediaProvider` as the boundary, all the `MediaView` images in it will be extracted as a set of image preview galleries in the running order. When an `<img >` is clicked, it will locate the specified image and open the preview.
+
+## features
+
+It has very perfect details and features:
+
+- Support touch gestures, drag and pan physical effect sliding, two-finger specified position to zoom in and out
+- All aspects of animation connection, open and close the rebound touch edge, let the natural interaction effect
+- The image is adaptive, with a suitable initial rendering size, and adapts according to the adjustment
+- Support for custom previews like `<video>` or any `HTML` element
+- Keyboard navigation, perfect for desktop
+- Support custom node expansion, easy to achieve full-screen preview, rotation control, picture introduction and more functions
+- Based on `typescript`, `7KB Gzipped`, supports server-side rendering
+- Simple and easy to use `API`, zero cost to get started
+
+## About
+
+<p className="flex flex-wrap">
+  <img alt="stars" src="https://badgen.net/github/stars/pariazar/media-view-react" className="mr-2 mb-2" />
+  <img alt="version" src="https://img.shields.io/npm/v/media-view-react.svg?style=flat-square" className="mr-2 mb-2" />
+  <img
+    alt="downloads"
+    src="http://img.shields.io/npm/dm/media-view-react.svg?style=flat-square"
+    className="mr-2 mb-2"
+  />
+  <img alt="license" src="https://badgen.net/npm/license/media-view-react" className="mr-2 mb-2" />
+  <img alt="min" src="https://badgen.net/bundlephobia/min/media-view-react?label=minified" className="mr-2 mb-2" />
+  <img alt="gzip" src="https://badgen.net/bundlephobia/minzip/media-view-react?label=gzip" className="mr-2 mb-2" />
+</p>
+
+<Callout emoji="😄">
+  <span>Click a Star to not get lost 👉 </span>
+  <a className="inline-block" href="https://github.com/pariazar/media-view-react" target="_blank">
+    Star
+  </a>
+  <span> Thanks for the support!</span>
+</Callout>
+
+- [GitHub](https://github.com/pariazar)
+
+## License
+
+Apache-2.0 © [pariazar](https://github.com/pariazar)
